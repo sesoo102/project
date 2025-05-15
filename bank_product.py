@@ -1,7 +1,7 @@
 import requests
 import pprint
 
-API_KEY = "2f6cdf934b056f7ae56c1bd479e2bfe6"
+API_KEY = ""
 
 # 정기 예금 상품 불러오기
 def fetch_deposit_products():
