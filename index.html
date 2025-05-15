@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Tree - 소비 습관 관리</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Pretendard', sans-serif;
+            background-color: #F7F9FA;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #6DB872;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to bottom, #F0FFF4, #F7F9FA);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 16px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+        }
+
+        .card {
+            flex: 1;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .card {
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card * {
+            pointer-events: none;
+            /* 내부 텍스트 클릭 시 링크 방지 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Pop Tree</div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="spending.html">소비분석</a>
+            <a href="trend.html">소비추이</a>
+            <a href="investment.html">투자정보</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h1>나의 소비 습관을 키워보세요!</h1>
+        <p>소비를 관리하고, 나무처럼 자산을 키우는 Pop Tree</p>
+    </section>
+
+    <section class="section">
+        <div class="cards">
+            <a href="ranking.html" class="card">
+                <div class="icon">🏆</div>
+                <h3>RANKING</h3>
+                <p>순위가 2위를 향해 상승 중이에요!</p>
+            </a>
+            <a href="spending.html" class="card">
+                <div class="icon">💸</div>
+                <h3>소비지출</h3>
+                <p>₩875,000<br>이번달 총 소비가 기록된 내용</p>
+            </a>
+            <a href="investment.html" class="card">
+                <div class="icon">💰</div>
+                <h3>투자정보</h3>
+                <p>정기 예금<br>이율 3.0%<br>안정적인 수익률을 원한다면</p>
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        © 2025 Pop Tree. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

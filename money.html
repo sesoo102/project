@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pop Tree - 금융 정보 카드</title>
+    <style>
+        body {
+            background-color: #fff8f0;
+            font-family: 'Noto Sans KR', sans-serif;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            color: #4caf50;
+            margin-bottom: 10px;
+        }
+
+        .card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card .info {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #ff7043;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 환율 정보 카드 -->
+    <div class="card">
+        <div class="icon">💱</div>
+        <h2>환율 정보</h2>
+        <div class="info">1 USD = <span class="highlight">1,345.50 원</span></div>
+        <div class="info">1 EUR = <span class="highlight">1,450.20 원</span></div>
+        <div class="info">1 JPY = <span class="highlight">9.85 원</span></div>
+    </div>
+
+    <!-- 기준금리 카드 -->
+    <div class="card">
+        <div class="icon">🏦</div>
+        <h2>기준금리</h2>
+        <div class="info">한국은행 기준금리</div>
+        <div class="highlight">3.50%</div>
+        <div class="info">2025년 5월 기준</div>
+    </div>
+
+</body>
+
+</html>

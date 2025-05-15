@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Tree - 랭킹</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Pretendard', sans-serif;
+            background-color: #F7F9FA;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #6DB872;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .ranking-list {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        .rank-item {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .rank-item:last-child {
+            border-bottom: none;
+        }
+
+        .rank-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFCB47;
+            width: 60px;
+            text-align: center;
+        }
+
+        .rank-info {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rank-name {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .rank-points {
+            font-size: 16px;
+            color: #888;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Pop Tree</div>
+        <div>
+            <span style="font-weight:bold; color:#FFCB47;">김민준님</span> | <a href="#">로그아웃</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h1>🌿 이번 달 소비 랭킹</h1>
+        <div class="ranking-list">
+            <div class="rank-item">
+                <div class="rank-number">1</div>
+                <div class="rank-info">
+                    <div class="rank-name">김철수</div>
+                    <div class="rank-points">95,000 pts</div>
+                </div>
+            </div>
+            <div class="rank-item">
+                <div class="rank-number">2</div>
+                <div class="rank-info">
+                    <div class="rank-name">이영희</div>
+                    <div class="rank-points">93,000 pts</div>
+                </div>
+            </div>
+            <div class="rank-item" style="background-color:#FFF7E0; border-radius: 8px;">
+                <div class="rank-number">3</div>
+                <div class="rank-info">
+                    <div class="rank-name">김민준 (나)</div>
+                    <div class="rank-points">92,000 pts</div>
+                </div>
+            </div>
+            <div class="rank-item">
+                <div class="rank-number">4</div>
+                <div class="rank-info">
+                    <div class="rank-name">최민수</div>
+                    <div class="rank-points">88,000 pts</div>
+                </div>
+            </div>
+            <div class="rank-item">
+                <div class="rank-number">5</div>
+                <div class="rank-info">
+                    <div class="rank-name">김영철</div>
+                    <div class="rank-points">85,000 pts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Pop Tree. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
